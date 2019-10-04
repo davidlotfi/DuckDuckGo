@@ -1,2 +1,2 @@
 # DuckDuckGo
-search bar in Angularjs
+Search bar in Angularjs
