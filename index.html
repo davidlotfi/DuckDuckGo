@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>DockDockGo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib\angular.min.js"></script>
+    <script src="Angularjs\data.js">  </script>
+
+  </head>
+  <style media="screen">
+      html{
+          background-color:#1C1C1C;
+      }
+     input{
+       background-image: url("favicon.ico");
+       background-repeat: no-repeat;
+       background-position: right;
+       background-size: 2em;
+     }
+     .ico{
+       width: 40px;
+     }
+  </style>
+
+  <body>
+
+
+          <img class="ico" src="favicon.ico" alt="">
+           <div class="dodk">
+               <img src="images/dodk.png" alt="">
+           </div>
+          <div class="formm">
+            <div class="boukernine" ng-controller="myCtrl"  ng-init="loadCountry()">
+              <input type="text" name="" value="" autocomplete="off" ng-model="siteweb" ng-keyup="complete(siteweb)">
+              <ul class="ullist">
+                <li class="list"  ng-repeat="serchdata in filterweb | limitTo:6" ng-click="fillTextbox(serchdata)">{{serchdata}}</li>
+              </ul>
+            </div>
+          </div>
+
+         <footer>Designed by Boukernine abdellatif </footer>
+
+  </body>
+</html>
